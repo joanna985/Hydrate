@@ -127,22 +127,28 @@
         app:layout_constraintStart_toEndOf="@+id/resultLabel"
         app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/pregnantChip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/waterLabel"
-        app:layout_constraintStart_toEndOf="@+id/pregnantLabel" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="140dp"
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/ageLabel"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/pregnantCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="240dp"
+        android:buttonTint="@color/white"
+        android:checked="false"
+        app:layout_constraintStart_toEndOf="@+id/pregnantLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
