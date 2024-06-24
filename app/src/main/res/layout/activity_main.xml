@@ -136,4 +136,13 @@
         app:layout_constraintBottom_toTopOf="@+id/waterLabel"
         app:layout_constraintStart_toEndOf="@+id/pregnantLabel" />
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toEndOf="@+id/ageLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
