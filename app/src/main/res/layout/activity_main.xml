@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/calculateButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blueBackgroundColor"
@@ -94,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="90dp"
         android:text="Water Needed per Day"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -104,27 +104,27 @@
         app:layout_constraintTop_toBottomOf="@+id/pregnantLabel" />
 
     <TextView
-        android:id="@+id/resultLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="30dp"
-        android:text="32"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
-
-    <TextView
         android:id="@+id/ozLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
         android:text="oz."
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/resultLabel"
+        app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="15dp"
+        android:text="32"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
 
     <EditText
@@ -233,5 +233,16 @@
         android:dropDownWidth="match_parent"
         app:layout_constraintStart_toEndOf="@+id/genderLabel"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregnantLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
