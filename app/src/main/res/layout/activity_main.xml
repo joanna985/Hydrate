@@ -128,10 +128,10 @@
         app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/ageEntryText"
         android:layout_width="55dp"
         android:layout_height="48dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="130dp"
         android:ems="10"
         android:inputType="number"
@@ -144,11 +144,94 @@
         android:id="@+id/pregnantCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="240dp"
         android:buttonTint="@color/white"
         android:checked="false"
         app:layout_constraintStart_toEndOf="@+id/pregnantLabel"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+
+    <EditText
+        android:id="@+id/weightEntryText"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/weightLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ftEntryText"
+        android:layout_width="35dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/heightLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+
+    <EditText
+        android:id="@+id/inEntryText"
+        android:layout_width="32dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/ftLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+
+    <TextView
+        android:id="@+id/ftLabel"
+        android:layout_width="17dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="82dp"
+        android:text="ft."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ftEntryText"
+        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+
+    <TextView
+        android:id="@+id/inLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:text="in."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/inEntryText"
+        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+
+    <Spinner
+        android:id="@+id/activitySpinner"
+        android:layout_width="148dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="367dp"
+        android:background="@color/white"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/activityLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="148dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="198dp"
+        android:background="@color/white"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/genderLabel"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
