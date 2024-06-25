@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             // Check if the user is pregnant.
             var pregnant = findViewById<CheckBox>(R.id.pregnantCheckBox).isChecked
 
+
             // Get the age from the EditText.
             val ageEditText = findViewById<EditText>(R.id.ageEntryText)
             var age = ageEditText.text.toString().toIntOrNull()
