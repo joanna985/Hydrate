@@ -7,6 +7,6 @@ help you on your journey to maintain healthy hydration levels.
 
 <p float="left">
   <img src="https://github.com/joanna985/Hydrate/assets/66742170/9456a766-e5e6-4bf3-afd7-e773bcd7e05d" width="310" />
-  <img src="https://github.com/joanna985/Hydrate/assets/66742170/799a442d-83ee-4000-8f38-1df442b6552c" width="310" /> 
-  <img src="https://github.com/joanna985/Hydrate/assets/66742170/20b75f66-84bd-41f2-91b0-155078f157e5" width="310" />
+  <img src="https://github.com/joanna985/Hydrate/assets/66742170/799a442d-83ee-4000-8f38-1df442b6552c" width="305" /> 
+  <img src="https://github.com/joanna985/Hydrate/assets/66742170/20b75f66-84bd-41f2-91b0-155078f157e5" width="300" />
 </p>
