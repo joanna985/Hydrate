@@ -19,29 +19,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.094" />
 
     <TextView
         android:id="@+id/ageLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:text="Age"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/heightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:text="Height"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/weightLabel"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/genderLabel" />
 
     <TextView
@@ -49,10 +51,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:text="Pregnant"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/waterLabel"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/activityLabel" />
 
     <TextView
@@ -60,10 +63,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:text="Activity"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/pregnantLabel"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/weightLabel" />
 
     <TextView
@@ -71,10 +75,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:text="Gender"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/heightLabel"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/ageLabel" />
 
     <TextView
@@ -82,25 +87,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:text="Weight"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/activityLabel"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/heightLabel" />
 
     <TextView
         android:id="@+id/waterLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-75dp"
         android:text="Water Needed per Day"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pregnantLabel" />
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
 
     <TextView
         android:id="@+id/ozLabel"
@@ -118,130 +124,131 @@
         android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
         android:text="0"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
 
     <EditText
         android:id="@+id/ageEntryText"
         android:layout_width="55dp"
         android:layout_height="48dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-10dp"
         android:ems="10"
         android:inputType="number"
         android:maxLength="3"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/ageLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/ageLabel" />
 
     <CheckBox
         android:id="@+id/pregnantCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="240dp"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
         android:buttonTint="@color/white"
         android:checked="false"
-        app:layout_constraintStart_toEndOf="@+id/pregnantLabel"
-        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/pregnantLabel" />
 
     <EditText
         android:id="@+id/weightEntryText"
         android:layout_width="55dp"
         android:layout_height="48dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-7dp"
         android:ems="10"
         android:inputType="number"
         android:maxLength="3"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/weightLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/weightLabel" />
 
     <EditText
         android:id="@+id/ftEntryText"
         android:layout_width="35dp"
         android:layout_height="44dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-7dp"
         android:ems="10"
         android:inputType="number"
         android:maxLength="2"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/heightLabel"
-        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/heightLabel" />
 
     <EditText
         android:id="@+id/inEntryText"
         android:layout_width="32dp"
         android:layout_height="47dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="67dp"
         android:ems="10"
         android:inputType="number"
         android:maxLength="2"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/ftLabel"
-        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+        app:layout_constraintTop_toTopOf="@+id/ftEntryText" />
 
     <TextView
         android:id="@+id/ftLabel"
         android:layout_width="17dp"
         android:layout_height="29dp"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="10dp"
         android:text="ft."
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/ftEntryText"
-        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+        app:layout_constraintTop_toTopOf="@+id/ftEntryText" />
 
     <TextView
         android:id="@+id/inLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="82dp"
         android:text="in."
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/inEntryText"
-        app:layout_constraintTop_toBottomOf="@+id/ageEntryText" />
+        app:layout_constraintTop_toTopOf="@+id/ftLabel" />
 
     <Spinner
         android:id="@+id/activitySpinner"
         android:layout_width="148dp"
         android:layout_height="28dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="367dp"
+        android:layout_marginStart="25dp"
         android:background="@color/white"
         android:dropDownWidth="match_parent"
-        app:layout_constraintStart_toEndOf="@+id/activityLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/activityLabel" />
 
     <Spinner
         android:id="@+id/genderSpinner"
         android:layout_width="148dp"
         android:layout_height="28dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="198dp"
+        android:layout_marginStart="25dp"
         android:background="@color/white"
         android:dropDownWidth="match_parent"
-        app:layout_constraintStart_toEndOf="@+id/genderLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/genderLabel" />
 
     <Button
         android:id="@+id/calculateButton"
         android:layout_width="129dp"
         android:layout_height="46dp"
-        android:layout_marginStart="70dp"
         android:layout_marginTop="30dp"
         android:text="Calculate"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
         app:layout_constraintTop_toBottomOf="@+id/pregnantLabel" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
