@@ -6,7 +6,7 @@ weight, activity levels, and pregnancy status. Overall, this is a simple and ele
 help you on your journey to maintain healthy hydration levels.
 
 <p float="left">
-  <img src="https://github.com/joanna985/Hydrate/assets/66742170/2de688f2-ccef-4eef-969c-a7ae5bcaea1a" width="203" />
-  <img src="https://github.com/joanna985/Hydrate/assets/66742170/7f46c244-342b-49ca-8232-2b0f5c2a8e8f" width="200" /> 
-  <img src="https://github.com/joanna985/Hydrate/assets/66742170/d273218c-168b-4e3d-b2bd-3c9c449e61b1" width="200" />
+  <img src="https://github.com/joanna985/Hydrate/assets/66742170/2334237d-bdb8-4870-a947-fbe9d58008a1" width="200" />
+  <img src="https://github.com/joanna985/Hydrate/assets/66742170/33504eb9-880c-4a4c-afd5-282a6f387cf6" width="200" /> 
+  <img src="https://github.com/joanna985/Hydrate/assets/66742170/9d392eac-be16-46b1-90b2-d5eba9b645bb" width="200" />
 </p>
