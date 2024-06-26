@@ -10,3 +10,5 @@ help you on your journey to maintain healthy hydration levels.
   <img src="https://github.com/joanna985/Hydrate/assets/66742170/799a442d-83ee-4000-8f38-1df442b6552c" width="255" /> 
   <img src="https://github.com/joanna985/Hydrate/assets/66742170/20b75f66-84bd-41f2-91b0-155078f157e5" width="250" />
 </p>
+
+This is a Native Android application developed in Android Studio and written in Kotlin with XML formatting and stylizing.
