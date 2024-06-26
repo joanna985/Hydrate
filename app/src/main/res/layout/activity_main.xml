@@ -112,25 +112,23 @@
         android:id="@+id/ozLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp"
         android:text="oz."
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/resultLabel"
-        app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
+        app:layout_constraintTop_toTopOf="@+id/waterLabel" />
 
     <TextView
         android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="10dp"
         android:text="0"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
-        app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
+        app:layout_constraintStart_toEndOf="@+id/waterLabel"
+        app:layout_constraintTop_toTopOf="@+id/waterLabel" />
 
     <EditText
         android:id="@+id/ageEntryText"
